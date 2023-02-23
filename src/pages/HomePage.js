@@ -21,7 +21,7 @@ function HomePage() {
 
   const onAddTalk = (text) => {
     // @TODO: dispatch async action to add talk
-    dispatch(asyncAddTalk({ text }))
+    dispatch(asyncAddTalk({ text }));
   };
 
   const onLike = (id) => {

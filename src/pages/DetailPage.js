@@ -17,7 +17,7 @@ function DetailPage() {
 
   useEffect(() => {
     // @TODO: dispatch async action to get talk detail by id
-    dispatch(asyncReceiveTalkDetail(id))
+    dispatch(asyncReceiveTalkDetail(id));
   }, [id, dispatch]);
 
   const onLikeTalk = () => {
@@ -27,7 +27,7 @@ function DetailPage() {
 
   const onReplyTalk = (text) => {
     // @TODO: dispatch async action to add reply talk
-    dispatch(asyncAddTalk({ text , replyTo: id }))
+    dispatch(asyncAddTalk({ text, replyTo: id }));
   };
 
   if (!talkDetail) {

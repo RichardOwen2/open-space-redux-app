@@ -11,7 +11,7 @@ function RegisterPage() {
 
   const onRegister = ({ name, id, password }) => {
     // @TODO: dispatch async action to register
-    dispatch(asyncRegisterUser({ name, id, password }))
+    dispatch(asyncRegisterUser({ name, id, password }));
     navigate('/');
   };
 
